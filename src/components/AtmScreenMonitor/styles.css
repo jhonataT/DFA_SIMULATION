@@ -1,0 +1,121 @@
+.atm-monitor__container {
+  height: 220px;
+
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.vertical-bar__container {
+  height: 100%;
+  width: 24px;
+
+  background-color: #d9d9d9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.vertical-bar__container div {
+  height: 15px;
+  width: 15px;
+
+  border-radius: 15px;
+  background-color: #8b8b8b;
+}
+
+.atm-monitor__content {
+  width: 320px;
+  background-color: #fff;
+
+  border-radius: 8px;
+
+  padding: 16px;
+}
+
+.atm-monitor__content section {
+  width: 100%;
+  height: 100%;
+  background-color: #8892a1;
+
+  border-radius: 8px;
+
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.monitor-options__container {
+  height: 25px;
+  width: 80%;
+
+  background-color: #7d8898;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+}
+
+.monitor-options__container button {
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+  padding: 0;
+  border: none;
+
+  transition: ease-in-out all .3s;
+
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.monitor-options__container button small {
+  font-size: 12px;
+  color: #fff;
+}
+
+.monitor-options__container button:hover {
+  background-color: #6a7689;
+}
+
+.atm-header__container {
+  height: 18px;
+  width: 80%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-option__container {
+  height: 100%;
+
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  justify-content: center;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.header-option__container small, icon {
+  color: rgba(255, 255, 255, .4);
+  font-size: 10px;
+
+  transition: ease-in-out color .3s;
+}
+
+.header-option__container small:hover, icon:hover {
+  color: #ffff;
+}
