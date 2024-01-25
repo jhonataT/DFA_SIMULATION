@@ -9,7 +9,7 @@ const VerticalBar = () => (
   </div>
 )
 
-export const AtmScreenMonitor = ({ selectedOption = 0 }) => {
+export const AtmScreenMonitor = ({ selectedOption = 0, hasCard = false }) => {
   return <div className='atm-monitor__container'>
     <VerticalBar />
     <div className='atm-monitor__content'>
@@ -31,6 +31,14 @@ export const AtmScreenMonitor = ({ selectedOption = 0 }) => {
             </button>
           </div>
         ))}
+
+        {
+          !hasCard && <div className='atm-monitor--withoutCard'>
+            <button className='insert-card__container'>
+              Inserir Cartão
+            </button>
+          </div>
+        }
       </section>
     </div>
     <VerticalBar />
