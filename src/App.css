@@ -5,20 +5,29 @@
   max-width: 1512px;
 
   display: flex;
+  gap: 16px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .atm__container {
   height: 100%;
   width: 520px;
-
-  max-height: 900px;
   background-color: #102542;
 
   display: flex;
   gap: 32px;
 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagram_container {
+  height: 100%;
+
+  display: flex;
+  gap: 16px;
   flex-direction: column;
   align-items: center;
   justify-content: center;

@@ -1,0 +1,38 @@
+.diagram-label-card__container {
+  height: 140px;
+  width: 620px;
+  
+  background-color: #fff;
+  border-radius: 8px;
+
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.1);
+
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+}
+
+.diagram-label--events, .diagram-label--states {
+  max-height: 140px;;
+
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.label-group__content {
+  max-width: 440px;
+}
+
+.label-group__content p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.label-group__content .label--active {
+  color: #13ab7e;
+}

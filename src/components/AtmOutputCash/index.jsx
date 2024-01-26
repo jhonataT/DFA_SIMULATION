@@ -1,6 +1,4 @@
-// import { RiMoneyDollarCircleFill } from "react-icons/ri";
-// import { PiMoneyFill } from "react-icons/pi";
-import { SiBitcoincash } from "react-icons/si";
+import { GiMoneyStack } from "react-icons/gi";
 import './styles.css';
 
 export const AtmOutputCash = ({ isActive = false }) => {
@@ -8,9 +6,8 @@ export const AtmOutputCash = ({ isActive = false }) => {
     <div className='atm-output__content'>
       <div className='atm-output__content--output'>
         {isActive && <div className='output-box--active'>
-          {
-            new Array(24).fill().map((_, idx) => (
-              <SiBitcoincash className="cash-icon" key={`${idx}-money-icon`} />
+          {new Array(24).fill().map((_, idx) => (
+              <GiMoneyStack className="cash-icon" key={`${idx}-money-icon`} />
             ))
           }
         </div>

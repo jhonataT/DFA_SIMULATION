@@ -63,6 +63,10 @@
   transition: background-color .3s;
 }
 
+.key__content .btn-active {
+  background-color: #71cdb2;
+}
+
 .key__content button:hover {
   background-color: #71cdb2;
 }

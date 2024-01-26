@@ -15,4 +15,12 @@ export const MonitorOptions = [
     id: 4,
     title: "Realizar Pagamento",
   },
+  {
+    id: 5,
+    title: "Realizar Pagamento Parcial",
+  },
+  {
+    id: 6,
+    title: "Realizar Pagamento Total",
+  },
 ];
