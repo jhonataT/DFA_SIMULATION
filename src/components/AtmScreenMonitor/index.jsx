@@ -70,8 +70,6 @@ export const AtmScreenMonitor = ({
       newStateToChange = 'Q5';
     }
 
-    console.log({ newStateToChange, currentState})
-
     handleSelectedOption(null);
     handleChangeStateOrEvent('V', newStateToChange, currentState);
   }

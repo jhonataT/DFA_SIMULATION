@@ -22,6 +22,36 @@
 }
 
 .type-Q0-,
+.type-Q2-D,
+.type-Q1-D,
+.type-Q1-H,
+.type-Q1-J,
+.type-Q1-E,
+.type-Q1-D-Q2,
+.type-Q1-V-Q2,
+.type-Q1-E-Q5,
+.type-Q3-H,
+.type-Q1-V-Q3,
+.type-Q1-V-Q4,
+.type-Q1-V-Q5,
+.type-Q0-B-Q2,
+.type-Q0-B-Q3,
+.type-Q0-B-Q4,
+.type-Q0-B-Q5,
+.type-Q0-B-Q6,
+.type-Q0-B-Q7,
+.type-Q4-J,
+.type-Q5-E,
+.type-Q5-F,
+.type-Q5-G,
+.type-Q1-V-Q5,
+.type-Q1-J-Q5,
+.type-Q1-H-Q5,
+.type-Q1-D-Q5,
+.type-Q6-F,
+.type-Q7-G,
+.type-Q5-V-Q7,
+.type-Q5-V-Q6,
 .type-Q1-C {
   width: 100%;
   height: 100%;
@@ -32,9 +62,121 @@
 }
 
 .diagram-card__content .type-Q0- {
-  background-image: url('../../assets//diagram_0_0.svg');
+  background-image: url('../../assets/diagram_0_0.svg');
 }
 
 .diagram-card__content .type-Q1-C {
-  background-image: url('../../assets//diagram_Q1_C.svg');
+  background-image: url('../../assets/diagram_Q1_C.svg');
 }
+
+.diagram-card__content .type-Q2-D {
+  background-image: url('../../assets/diagram_Q2_D.svg');
+}
+
+.diagram-card__content .type-Q1-V-Q2 {
+  background-image: url('../../assets/diagram_Q1_V_Q2.svg');
+}
+
+.diagram-card__content .type-Q3-H {
+  background-image: url('../../assets/diagram_Q3_H.svg');
+}
+
+.diagram-card__content .type-Q1-V-Q3 {
+  background-image: url('../../assets/diagram_Q1_V_Q3.svg');
+}
+
+.diagram-card__content .type-Q0-B-Q2 {
+  background-image: url('../../assets/diagram_Q0_B_Q2.svg');
+}
+
+.diagram-card__content .type-Q0-B-Q3 {
+  background-image: url('../../assets/diagram_Q0_B_Q3.svg');
+}
+
+.diagram-card__content .type-Q0-B-Q4 {
+  background-image: url('../../assets/diagram_Q0_B_Q4.svg');
+}
+
+.diagram-card__content .type-Q0-B-Q5 {
+  background-image: url('../../assets/diagram_Q0_B_Q5.svg');
+}
+
+.diagram-card__content .type-Q0-B-Q6 {
+  background-image: url('../../assets/diagram_Q0_B_Q6.svg');
+}
+
+.diagram-card__content .type-Q0-B-Q7 {
+  background-image: url('../../assets/diagram_Q0_B_Q7.svg');
+}
+
+.diagram-card__content .type-Q4-J {
+  background-image: url('../../assets/diagram_Q4_J.svg');
+}
+
+.diagram-card__content .type-Q1-V-Q4 {
+  background-image: url('../../assets/diagram_Q1_V_Q4.svg');
+}
+
+.diagram-card__content .type-Q1-V-Q5 {
+  background-image: url('../../assets/diagram_Q1_V_Q5.svg');
+}
+
+.diagram-card__content .type-Q1-D {
+  background-image: url('../../assets/diagram_Q1_D.svg');
+}
+
+.diagram-card__content .type-Q1-D-Q2 {
+  background-image: url('../../assets/diagram_Q1_D.svg');
+}
+
+.diagram-card__content .type-Q1-H {
+  background-image: url('../../assets/diagram_Q1_H.svg');
+}
+
+.diagram-card__content .type-Q1-J {
+  background-image: url('../../assets/diagram_Q1_J.svg');
+}
+
+.diagram-card__content .type-Q1-E {
+  background-image: url('../../assets/diagram_Q1_E.svg');
+}
+
+.diagram-card__content .type-Q1-E-Q5 {
+  background-image: url('../../assets/diagram_Q1_E.svg');
+}
+
+.diagram-card__content .type-Q5-E {
+  background-image: url('../../assets/diagram_Q5_E.svg');
+}
+
+.diagram-card__content .type-Q5-F {
+  background-image: url('../../assets/diagram_Q5_F.svg');
+}
+
+.diagram-card__content .type-Q5-G {
+  background-image: url('../../assets/diagram_Q5_G.svg');
+}
+
+.diagram-card__content .type-Q6-F {
+  background-image: url('../../assets/diagram_Q6_F.svg');
+}
+
+.diagram-card__content .type-Q7-G {
+  background-image: url('../../assets/diagram_Q7_G.svg');
+}
+
+.diagram-card__content .type-Q5-V-Q6 {
+  background-image: url('../../assets/diagram_Q5_V_Q6.svg');
+}
+
+.diagram-card__content .type-Q5-V-Q7 {
+  background-image: url('../../assets/diagram_Q5_V_Q7.svg');
+}
+
+
+
+
+
+
+
+

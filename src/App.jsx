@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ToastContainer } from "react-toastify";
 import { AtmKeyBoard } from './components/AtmKeyboard';
 import { AtmOutputCash } from './components/AtmOutputCash';
@@ -18,8 +18,44 @@ function App() {
   });
 
   const handleChangeStateOrEvent = (currentEvent, currentState, previousState = '') => {
+    // if(currentEvent !== 'B' && currentEvent !== 'V') {
+    //   previousState = '';
+    // }
+
+    console.log("currentEvent, currentState, previousState", {
+      currentEvent, currentState, previousState
+    })
+
     setCurrentStateAndEvent({ currentEvent, currentState, previousState });
   }
+
+  useEffect(() => {
+    if(selectedOption && currentStateAndEvent['currentState'] !== 'Q0') {
+      const getEventByOption = (option) => {
+        console.log({
+          currentState: currentStateAndEvent['currentState'],
+          option
+        })
+
+        if(option === 1) return 'D';
+        else if(option === 2 && currentStateAndEvent['currentState'] === 'Q1') return 'H';
+        else if(option === 3 && currentStateAndEvent['currentState'] === 'Q1') return 'J';
+        else if(option === 4 && currentStateAndEvent['currentState'] === 'Q1') return 'E';
+        else if(option === 5 && currentStateAndEvent['currentState'] === 'Q5') return 'F';
+        else if(option === 6 && currentStateAndEvent['currentState'] === 'Q5') return 'G';
+        else return '';
+      }
+
+      setCurrentStateAndEvent({
+        ...currentStateAndEvent,
+        currentEvent: getEventByOption(selectedOption),
+        previousState: (
+          getEventByOption(selectedOption) !== 'V' && getEventByOption(selectedOption) !== 'B'
+        ) ? '' :
+        currentStateAndEvent.previousState
+      });
+    }
+  }, [selectedOption]);
 
   return <main className='main__container'>
     <ToastContainer
@@ -35,7 +71,7 @@ function App() {
       className="toastify-class"
       style={{ zIndex: 400000 }}
     />
-    <container className='atm__container'>
+    <section className='atm__container'>
       <AtmScreenMonitor
         {...{
           handleChangeStateOrEvent,
@@ -55,11 +91,12 @@ function App() {
           currentState: currentStateAndEvent['currentState'],
         }}
       />
-    </container>
-    <container className='diagram_container'>
+    </section>
+    <section className='diagram_container'>
       <DiagramCard
         currentEvent={currentStateAndEvent['currentEvent']}
         currentState={currentStateAndEvent['currentState']}
+        previousState={currentStateAndEvent['previousState']}
       />
       <DiagramLabelCard
         labelList={DiagramStateLabels}
@@ -69,7 +106,7 @@ function App() {
         labelList={DiagramEventLabels}
         currentId={currentStateAndEvent['currentEvent']}
       />
-    </container>
+    </section>
   </main>
 }
 

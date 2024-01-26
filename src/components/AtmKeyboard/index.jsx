@@ -25,16 +25,16 @@ export const AtmKeyBoard = ({
 
     let newStateData = { event: '', state: '' };
 
-    if(selectedOption === 1) {
+    if(selectedOption === 1 && currentState === 'Q1') {
       newStateData.event = 'D';
       newStateData.state = 'Q2';
-    } else if(selectedOption === 2) {
+    } else if(selectedOption === 2 && currentState === 'Q1') {
       newStateData.event = 'H';
       newStateData.state = 'Q3';
-    } else if(selectedOption === 3) {
+    } else if(selectedOption === 3 && currentState === 'Q1') {
       newStateData.event = 'J';
       newStateData.state = 'Q4';
-    } else if(selectedOption === 4) {
+    } else if(selectedOption === 4 && currentState === 'Q1') {
       newStateData.event = 'E';
       newStateData.state = 'Q5';
     } else if(selectedOption === 5 && currentState === 'Q5') {
