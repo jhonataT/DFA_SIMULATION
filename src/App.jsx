@@ -18,25 +18,12 @@ function App() {
   });
 
   const handleChangeStateOrEvent = (currentEvent, currentState, previousState = '') => {
-    // if(currentEvent !== 'B' && currentEvent !== 'V') {
-    //   previousState = '';
-    // }
-
-    console.log("currentEvent, currentState, previousState", {
-      currentEvent, currentState, previousState
-    })
-
     setCurrentStateAndEvent({ currentEvent, currentState, previousState });
   }
 
   useEffect(() => {
     if(selectedOption && currentStateAndEvent['currentState'] !== 'Q0') {
       const getEventByOption = (option) => {
-        console.log({
-          currentState: currentStateAndEvent['currentState'],
-          option
-        })
-
         if(option === 1) return 'D';
         else if(option === 2 && currentStateAndEvent['currentState'] === 'Q1') return 'H';
         else if(option === 3 && currentStateAndEvent['currentState'] === 'Q1') return 'J';

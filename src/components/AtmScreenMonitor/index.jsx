@@ -60,8 +60,6 @@ export const AtmScreenMonitor = ({
   const handleChangeToPreviousState = () => {
     let newStateToChange = 'Q1';
 
-    console.log("CURRENT STATE", currentState)
-
     if(currentState === 'Q0' || currentState === 'Q1') {
       customToast('Você não pode utilizar essa função agora.', 'error');
       handleSelectedOption(null);
