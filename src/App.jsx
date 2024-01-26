@@ -7,7 +7,7 @@ import { DiagramCard } from './components/DiagramCard';
 import { DiagramLabelCard } from './components/DiagramLabelCard';
 import { DiagramEventLabels, DiagramStateLabels } from './core/mocks/diagram/diagramLabels';
 import 'react-toastify/dist/ReactToastify.css';
-import './app.css';
+import './App.css';
 
 function App() {
   const [selectedOption, setSelectedOption] = useState(null);
